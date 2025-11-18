@@ -33,7 +33,7 @@ public class NotificationController {
 	
 	
 	@GetMapping("/api/notificationms/v1/notification")
-	public NotificationListResponse getNotificationsByUserId(@RequestParam(name= "userId") String userId) {
+	public NotificationListResponse getNotificationsByUserId(@RequestParam(name= "userId") Long userId) {
 		long currentTime = System.currentTimeMillis();
 		try {
 			return notificationServiceImpl.getNotificationsByUserId(userId);

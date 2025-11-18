@@ -43,7 +43,7 @@ public class NotificationServiceImpl {
 		}
 	}
 
-	public NotificationListResponse getNotificationsByUserId(String userId) {
+	public NotificationListResponse getNotificationsByUserId(Long userId) {
 		try {
 			log.debug("getNotificationsByUserId:: userId: {}", userId);
 

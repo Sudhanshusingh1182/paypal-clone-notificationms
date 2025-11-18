@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class SendNotificationRequest {
 	private Long id;
-	private String userId;
+	private Long userId;
 	private String message;
 	private LocalDateTime createdDate;
 }
